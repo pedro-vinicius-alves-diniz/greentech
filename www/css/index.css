@@ -176,6 +176,13 @@ input[type="text"]{
     text-overflow: ellipsis;
 }
 
+.filter-btn.active{
+    background-color: var(--verde);
+    border: none;
+    color: var(--branco);
+    font-weight: 800;
+}
+
 .row{
     flex-wrap: wrap;
     flex-direction: row;
@@ -246,3 +253,4 @@ input[type="text"]{
         flex: 20%;
     }
 }
+
