@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <!-- Required meta tags-->
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <!-- Icones do Remix Icons -->
     <link rel="stylesheet" href="css/remixicon/remixicon.css">
+    <link rel="stylesheet" href="css/detalhes.css">
 
 
 </head>
@@ -31,7 +32,7 @@
         <div class="view view-main">
 
             <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
+            <div id="menuPrincipal" class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex">
                     <a href="/index/" class="tab-link link active">
                         <i class="ri-home-5-line"></i>
@@ -64,19 +65,176 @@
                     </a>
                 </div>
 
+                <form action="">
+                    <input type="text" placeholder="O que você procura?">
+                    <i class="ri-search-2-line icone-busca"></i>
+                </form>
+
                 <!-- Scrollable page content -->
                 <div class="page-content">
                     <div class="block">
-                        Conteúdo do LINK 1
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/propaganda.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/propaganda2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/propaganda3.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/propaganda4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="display-flex align-items-center justify-content-space-between">
+                            <h2>Categorias</h2>
+                            <a href="#">Ver todas <i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Swiper -->
+                        <div class="swiper categorias">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <button class="filter-btn active">Todas</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Celulares</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Laptops</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Tablets</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Smartwatches</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Fones de Ouvido</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Câmeras</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Televisores</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Consoles de Videogame</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Home Theater</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Drones</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Impressoras</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Monitores</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Projetores</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Smart Home</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Acessórios de Computador</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="filter-btn">Armazenamento</button>
+                                </div>
+                                
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div id="produtos" class="margin-top row display-flex align-items-center justify-content-start">
+                            <div class="item-card">
+                                <a href="/detalhes/" class="item">
+                                    <div class="img-container">
+                                        <img src="img/iphone.png" alt="">
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span class="nome">Iphone 14</span>
+                                        <span class="bold margin-right">
+                                            <i class="mdi mdi-star"></i>
+                                            4.8
+                                        </span>
+                                    </div>
+                                    <div class="price bold">R$ 10.000,00</div>
+                                </a>
+                            </div>
+
+                            <div class="item-card">
+                                <a href="#" class="item">
+                                    <div class="img-container">
+                                        <img src="img/xbox.png" alt="">
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span class="nome">Xbox Series X</span>
+                                        <span class="bold margin-right">
+                                            <i class="mdi mdi-star"></i>
+                                            4.8
+                                        </span>
+                                    </div>
+                                    <div class="price bold">R$ 5.000,00</div>
+                                </a>
+                            </div>
+
+                            <div class="item-card">
+                                <a href="#" class="item">
+                                    <div class="img-container">
+                                        <img src="img/airpod.png" alt="">
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span class="nome">Airpods</span>
+                                        <span class="bold margin-right">
+                                            <i class="mdi mdi-star"></i>
+                                            4.8
+                                        </span>
+                                    </div>
+                                    <div class="price bold">R$ 1.000,00</div>
+                                </a>
+                            </div>
+
+                            <div class="item-card">
+                                <a href="#" class="item">
+                                    <div class="img-container">
+                                        <img src="img/macbook.png" alt="">
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span class="nome">MacBook Air</span>
+                                        <span class="bold margin-right">
+                                            <i class="mdi mdi-star"></i>
+                                            4.8
+                                        </span>
+                                    </div>
+                                    <div class="price bold">R$ 15.000,00</div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <br><br><br><br><br><br><br><br>
+
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
     <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
-	<!-- jQuery -->
-	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
     <!-- Roteamento do app-->
     <script type="text/javascript" src="js/routes.js"></script>
     <script src="cordova.js"></script>

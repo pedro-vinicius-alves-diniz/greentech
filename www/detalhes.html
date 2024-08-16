@@ -10,13 +10,15 @@
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
-    <title>My App</title>
+    <title>Template Tab</title>
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
-    <link rel="stylesheet" href="css/personalizado.css">
+    <link rel="stylesheet" href="css/index.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!-- Icones do Remix Icons -->
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
 
 
 </head>
@@ -27,30 +29,47 @@
 
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-            <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="link4" class="page">
 
-                <!-- Top Navbar -->
-                <div class="navbar">
-                    <div class="navbar-bg"></div>
-                    <div class="navbar-inner justify-content-center">
-                        <div class="title ">Link 4</div>
+
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="detalhes" class="page color-theme-blue">
+
+                <!-- TAB BAR-->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex">
+                        <div>R$ 1200</div>
+                        <div>
+                            <button>Adicionar</button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                    <div class="block">
-                        Conteúdo do link 4
-                    </div>
+                   <div class="prod-detail">
+                        <div class="buttons-top">
+                            <a href="/index/"><i class="ri-arrow-left-s-line"></i></a>
+                            <a href="#"><i class="ri-heart-3-line"></i></i></a>
+                            <a href="#"><i class="ri-share-2-line"></i></a>
+                        </div>
+                        <img src="img/default.png" alt="">
+                   </div>
+
+                   <div class="prod-content">
+                    
+                   </div>
+                   
                 </div>
+
+
             </div>
         </div>
     </div>
     <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
-	<!-- jQuery -->
-	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
     <!-- Roteamento do app-->
     <script type="text/javascript" src="js/routes.js"></script>
     <script src="cordova.js"></script>
