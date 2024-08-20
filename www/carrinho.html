@@ -50,7 +50,7 @@
                       <div class="list">
                         <ul>
                           <li>
-                            <a id="Esvaziar" href="/dialog/" class="list-button popover-close">
+                            <a id="esvaziar" href="/dialog/" class="list-button popover-close">
                                 Esvaziar Carrinho
                                 <i class="mdi mdi-broom"></i>
                             </a>
@@ -60,21 +60,21 @@
                     </div>
                   </div>
 
-                <div style="margin-bottom: 110px;" class="toolbar toolbar-bottom">
+                <div id="toolbarTotais" style="margin-bottom: 110px;" class="toolbar toolbar-bottom">
                     <div class="totais toolbar-inner display-flex align-items-center justify-content-center">
                         <div class="margin-top bd-bottom w-80 display-flex justify-content-space-between">
-                            <span class="subtotal-text">Subtotal</span>
-                            <span class="subtotal-value">R$ 800</span>
+                            <span class="subtotal-text">Subtotal:</span>
+                            <span id="subtotal" class="subtotal-value">R$ 800</span>
                         </div>
                         <div class="w-80 display-flex justify-content-space-between">
                             <span class="subtotal-text">Frete</span>
-                            <span class="subtotal-value">R$ 10</span>
+                            <span class="subtotal-value"><strong>R$ 10</strong> </span>
                         </div>
                     </div>
                 </div>
 
                 <!-- TAB BAR-->
-                <div class="toolbar toolbar-bottom">
+                <div id="toolbarCheckout" class="toolbar toolbar-bottom">
                     <div class="toolbar-inner display-flex align-items-center justify-content-center">
                         <button class="add-cart comprar">Comprar 😎</button>
                     </div>
@@ -91,7 +91,7 @@
                             <div class="area-details">
                                 <div class="details-top">
                                     <span>Nome do Produto adhafljadklfjakldjfakldj</span>
-                                    <a href="#"><i class="ri-close-fill"></i></a>
+                                    <a class="delete-item" href="#"><i class="ri-close-fill"></i></a>
 
                                 </div>
 

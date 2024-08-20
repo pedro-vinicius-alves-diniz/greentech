@@ -34,9 +34,9 @@ var app = new Framework7({
         },
         pageInit: function (event, page) {
           // fazer algo quando a página for inicializada
-          app.views.main.router.navigate('/carrinho/')
+          // app.views.main.router.navigate('/carrinho/')
 
-          $.getScript('js.index.js')
+          $.getScript('js/index.js');
 
           var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
@@ -157,6 +157,7 @@ var app = new Framework7({
         },
         pageInit: function (event, page) {
           // fazer algo quando a página for inicializada
+          $.getScript('js/detalhes.js');
         },
         pageBeforeRemove: function (event, page) {
           // fazer algo antes da página ser removida do DOM
@@ -180,6 +181,7 @@ var app = new Framework7({
         },
         pageInit: function (event, page) {
           // fazer algo quando a página for inicializada
+          $.getScript('js/carrinho.js');
         },
         pageBeforeRemove: function (event, page) {
           // fazer algo antes da página ser removida do DOM
